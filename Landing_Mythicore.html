@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AnimeBlog — Tu primer blog de animes con HTML + CSS</title>
+  <meta name="description" content="Blog educativo de animes hecho solo con HTML y CSS. Tarjetas con overlays y secciones por categorías (Amor, Pelea, Comedia, Sobrenatural)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Mythicore.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <h1 class="brand"><span aria-hidden="true">🎌</span> AnimeBlog</h1>
+      <nav aria-label="Principal" class="nav">
+        <ul class="nav__list">
+          <li><a class="is-active" href="#inicio">Inicio</a></li>
+          <li><a href="#posts">Publicaciones</a></li>
+          <li><a href="#amor">Amor</a></li>
+          <li><a href="#pelea">Pelea</a></li>
+          <li><a href="#comedia">Comedia</a></li>
+          <li><a href="#sobrenatural">Sobrenatural</a></li>
+          <li><a href="#acerca">Acerca</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="container hero__inner">
+      <h2 class="hero__title">Tu primer blog de <span>animes</span> con HTML + CSS</h2>
+      <p class="hero__subtitle">Aprende lo esencial creando un sitio sencillo: portadas, tarjetas con overlays y secciones por categorías.</p>
+      <form class="hero__search" role="search" aria-label="Buscar">
+        <label class="sr-only" for="q">Buscar</label>
+        <input id="q" name="q" type="search" placeholder="Buscar anime…" />
+        <button type="submit" aria-label="Buscar" disabled>🔍</button>
+      </form>
+    </div>
+  </section>
+
+  <main id="contenido" class="container">
+    <!-- =================== PUBLICACIONES =================== -->
+    <section id="posts" aria-labelledby="tituloposts" class="posts">
+      <h2 id="tituloposts" class="section-title">Publicaciones recientes</h2>
+      <div class="grid">
+        <!-- Demon Slayer -->
+        <article class="card">
+          <div class="card__media"><img src="./assets/Demonslayer.jpg" alt="Póster de Demon Slayer" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title"><a href="#">Demon Slayer</a></h3>
+            <p class="card__excerpt">Animación sobresaliente y una historia conmovedora.</p>
+            <ul class="tags"><li>Shōnen</li><li>Acción</li></ul>
+          </div>
+          <div class="overlay">
+            <h4 class="overlay__title">Demon Slayer</h4>
+            <ul class="meta"><li>⭐ 4.8 (1.2M)</li><li>4 Temporadas</li><li>55 Episodios</li></ul>
+            <p class="overlay__desc">Tanjiro enfrenta demonios para salvar a su hermana en un viaje lleno de emociones y batallas espectaculares.</p>
+          </div>
+        </article>
+
+        <!-- Spy x Family -->
+        <article class="card">
+          <div class="card__media"><img src="./assets/Spyxfamily.avif" alt="Póster de Spy x Family" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title"><a href="#">Spy x Family</a></h3>
+            <p class="card__excerpt">Humor y corazón con una familia inusual.</p>
+            <ul class="tags"><li>Comedia</li><li>Slice of Life</li></ul>
+          </div>
+          <div class="overlay">
+            <h4 class="overlay__title">Spy x Family</h4>
+            <ul class="meta"><li>⭐ 4.7 (840K)</li><li>2 Temporadas</li><li>37 Episodios</li></ul>
+            <p class="overlay__desc">Un espía, una asesina y una telépata se unen en una misión que se convierte en una familia real.</p>
+          </div>
+        </article>
+
+        <!-- Jujutsu Kaisen -->
+        <article class="card">
+          <div class="card__media"><img src="./assets/Jujutsukaisen.webp" alt="Póster de Jujutsu Kaisen" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title"><a href="#">Jujutsu Kaisen</a></h3>
+            <p class="card__excerpt">Hechicería moderna con coreografías asombrosas.</p>
+            <ul class="tags"><li>Acción</li><li>Sobrenatural</li></ul>
+          </div>
+          <div class="overlay">
+            <h4 class="overlay__title">Jujutsu Kaisen</h4>
+            <ul class="meta"><li>⭐ 4.9 (1.1M)</li><li>2 Temporadas</li><li>47 Episodios</li></ul>
+            <p class="overlay__desc">Itadori, Fushiguro y Nobara combaten maldiciones con un estilo visual y narrativo impecable.</p>
+          </div>
+        </article>
+
+        <!-- Haikyuu -->
+        <article class="card">
+          <div class="card__media"><img src="./assets/haikyuu.jpg" alt="Póster de Haikyuu!!" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title"><a href="#">Haikyuu!!</a></h3>
+            <p class="card__excerpt">Deporte, trabajo en equipo y amistad.</p>
+            <ul class="tags"><li>Deportes</li><li>Motivación</li></ul>
+          </div>
+          <div class="overlay">
+            <h4 class="overlay__title">Haikyuu!!</h4>
+            <ul class="meta"><li>⭐ 4.8 (770K)</li><li>4 Temporadas</li><li>85 Episodios</li></ul>
+            <p class="overlay__desc">Hinata y Kageyama impulsan a su equipo de voleibol hacia la cima con pasión y esfuerzo constante.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =================== CATEGORÍAS =================== -->
+
+    <!-- 💕 AMOR -->
+    <section id="amor" class="category">
+      <h2 class="section-title">Animes de amor</h2>
+
+      <div class="grid">
+        <!-- Horimiya -->
+        <article class="card">
+          <div class="card__media"><img src="./assets/horimiya.webp" alt="Póster de Horimiya" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title"><a href="#">Horimiya</a></h3>
+            <p class="card__excerpt">Pareja encantadora y momentos cotidianos.</p>
+            <ul class="tags"><li>Romance</li><li>Comedia</li></ul>
+          </div>
+          <div class="overlay">
+            <h4 class="overlay__title">Horimiya</h4>
+            <ul class="meta"><li>⭐ 4.7 (420K)</li><li>1 Temporada</li><li>13 Episodios</li></ul>
+            <p class="overlay__desc">Detrás de las apariencias, dos estudiantes descubren una conexión auténtica.</p>
+          </div>
+        </article>
+
+        <!-- Kaguya-sama -->
+        <article class="card">
+          <div class="card__media"><img src="./assets/kaguya.jpg" alt="Póster de Kaguya-sama: Love Is War" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title"><a href="#">Kaguya-sama: Love Is War</a></h3>
+            <p class="card__excerpt">Guerra de ingenio entre dos enamorados.</p>
+            <ul class="tags"><li>Romance</li><li>Comedia</li></ul>
+          </div>
+          <div class="overlay">
+            <h4 class="overlay__title">Kaguya-sama: Love Is War</h4>
+            <ul class="meta"><li>⭐ 4.8 (960K)</li><li>3 Temporadas</li><li>37 Episodios</li></ul>
+            <p class="overlay__desc">Dos genios del consejo estudiantil compiten por no confesar sus sentimientos primero.</p>
+          </div>
+        </article>
+
+        <!-- Voz en silencio -->
+        <article class="card">
+          <div class="card__media"><img src="./assets/silentvoice.jpg" alt="Póster de A Silent Voice" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title"><a href="#">A Silent Voice</a></h3>
+            <p class="card__excerpt">Perdón, amistad y amor en una obra sensible.</p>
+            <ul class="tags"><li>Drama</li><li>Película</li></ul>
+          </div>
+          <div class="overlay">
+            <h4 class="overlay__title">A Silent Voice</h4>
+            <ul class="meta"><li>⭐ 4.8 (700K)</li><li>Película</li><li>129 min</li></ul>
+            <p class="overlay__desc">Un joven intenta redimirse con la chica sorda a la que acosó en primaria.</p>
+          </div>
+        </article>
+      </div>
+
+      <details class="more">
+        <summary>Ver más <span class="caret" aria-hidden="true"></span></summary>
+        <div class="grid">
+          <!-- Your Name -->
+          <article class="card"><div class="card__media"><img src="./assets/your name.jpg" alt="Póster Your Name" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Your Name</a></h3><p class="card__excerpt">Romance y destino con un toque sobrenatural.</p><ul class="tags"><li>Romance</li><li>Drama</li></ul></div><div class="overlay"><h4 class="overlay__title">Your Name</h4><ul class="meta"><li>⭐ 4.9 (1.4M)</li><li>Película</li><li>106 min</li></ul><p class="overlay__desc">Dos adolescentes conectan misteriosamente a través de sueños que cruzan sus vidas.</p></div></article>
+          <!-- Toradora -->
+          <article class="card"><div class="card__media"><img src="./assets/toradora.jpg" alt="Póster Toradora" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Toradora!</a></h3><p class="card__excerpt">Historia de amor entre opuestos.</p><ul class="tags"><li>Romance</li><li>Comedia</li></ul></div><div class="overlay"><h4 class="overlay__title">Toradora!</h4><ul class="meta"><li>⭐ 4.7 (590K)</li><li>1 Temporada</li><li>25 Episodios</li></ul><p class="overlay__desc">Ryuji y Taiga forman una alianza amorosa… que se complica.</p></div></article>
+          <!-- Clannad -->
+          <article class="card"><div class="card__media"><img src="./assets/clannad.jpg" alt="Póster Clannad" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Clannad</a></h3><p class="card__excerpt">Drama sobre familia y crecimiento.</p><ul class="tags"><li>Romance</li><li>Drama</li></ul></div><div class="overlay"><h4 class="overlay__title">Clannad</h4><ul class="meta"><li>⭐ 4.6 (380K)</li><li>2 Temporadas</li><li>47 Episodios</li></ul><p class="overlay__desc">Tomoya conoce a Nagisa y su vida toma un rumbo inesperado.</p></div></article>
+          <!-- Kimi ni Todoke -->
+          <article class="card"><div class="card__media"><img src="./assets/kimi-ni-todoke.jpg" alt="Póster Kimi ni Todoke" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Kimi ni Todoke</a></h3><p class="card__excerpt">Romance escolar dulce y sincero.</p><ul class="tags"><li>Romance</li><li>Escolar</li></ul></div><div class="overlay"><h4 class="overlay__title">Kimi ni Todoke</h4><ul class="meta"><li>⭐ 4.6 (270K)</li><li>2 Temporadas</li><li>37 Episodios</li></ul><p class="overlay__desc">Sawako busca abrirse a los demás mientras descubre el amor.</p></div></article>
+          <!-- Fruits Basket -->
+          <article class="card"><div class="card__media"><img src="./assets/fruitsbasket.jpg" alt="Póster Fruits Basket" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Fruits Basket</a></h3><p class="card__excerpt">Sanación, familia y amor místico.</p><ul class="tags"><li>Drama</li><li>Romance</li></ul></div><div class="overlay"><h4 class="overlay__title">Fruits Basket</h4><ul class="meta"><li>⭐ 4.8 (520K)</li><li>3 Temporadas</li><li>63 Episodios</li></ul><p class="overlay__desc">Tohru descubre el secreto de los Soma y un nuevo hogar.</p></div></article>
+          <!-- Your Lie in April -->
+          <article class="card"><div class="card__media"><img src="./assets/yourlie.jpg" alt="Póster Your Lie in April" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Your Lie in April</a></h3><p class="card__excerpt">Música y emociones intensas.</p><ul class="tags"><li>Romance</li><li>Drama</li><li>Música</li></ul></div><div class="overlay"><h4 class="overlay__title">Your Lie in April</h4><ul class="meta"><li>⭐ 4.8 (880K)</li><li>1 Temporada</li><li>22 Episodios</li></ul><p class="overlay__desc">Kousei renace gracias al violín y la luz de Kaori.</p></div></article>
+        </div>
+      </details>
+    </section>
+
+    <!-- PELEA -->
+    <section id="pelea" class="category">
+      <h2 class="section-title">Animes de pelea</h2>
+
+      <div class="grid">
+        <!-- JJK -->
+        <article class="card">
+          <div class="card__media"><img src="./assets/Jujutsukaisen.webp" alt="Póster JJK" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title"><a href="#">Jujutsu Kaisen</a></h3>
+            <p class="card__excerpt">Hechicería, maldiciones y ritmo frenético.</p>
+            <ul class="tags"><li>Acción</li><li>Sobrenatural</li></ul>
+          </div>
+          <div class="overlay">
+            <h4 class="overlay__title">Jujutsu Kaisen</h4>
+            <ul class="meta"><li>⭐ 4.9 (1.1M)</li><li>2 Temporadas</li><li>47 Episodios</li></ul>
+            <p class="overlay__desc">Itadori, Fushiguro y Nobara luchan contra maldiciones bajo la guía de Gojo.</p>
+          </div>
+        </article>
+
+        <!-- AoT -->
+        <article class="card">
+          <div class="card__media"><img src="./assets/atackontitan.webp" alt="Póster AOT" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title"><a href="#">Attack on Titan</a></h3>
+            <p class="card__excerpt">Guerra, misterio y una humanidad al límite.</p>
+            <ul class="tags"><li>Acción</li><li>Drama</li></ul>
+          </div>
+          <div class="overlay">
+            <h4 class="overlay__title">Attack on Titan</h4>
+            <ul class="meta"><li>⭐ 4.9 (1.8M)</li><li>4 Temporadas</li><li>87 Episodios</li></ul>
+            <p class="overlay__desc">Eren y los exploradores revelan conspiraciones mientras luchan contra titanes colosales.</p>
+          </div>
+        </article>
+
+        <!-- HxH -->
+        <article class="card">
+          <div class="card__media"><img src="./assets/hunterxhunter.jpg" alt="Póster HunterxHunter" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title"><a href="#">Hunter x Hunter</a></h3>
+            <p class="card__excerpt">Sistema de poder brillante y combates tácticos.</p>
+            <ul class="tags"><li>Aventura</li><li>Acción</li></ul>
+          </div>
+          <div class="overlay">
+            <h4 class="overlay__title">Hunter x Hunter</h4>
+            <ul class="meta"><li>⭐ 4.9 (1.3M)</li><li>6 Arcos</li><li>148 Episodios</li></ul>
+            <p class="overlay__desc">Gon y Killua se adentran en el mundo de los Hunters, con el Nen como clave.</p>
+          </div>
+        </article>
+      </div>
+
+      <details class="more">
+        <summary>Ver más <span class="caret" aria-hidden="true"></span></summary>
+        <div class="grid">
+          <!-- Naruto -->
+          <article class="card"><div class="card__media"><img src="./assets/naruto.jpg" alt="Póster de Naruto" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Naruto</a></h3><p class="card__excerpt">Un ninja busca reconocimiento y proteger su aldea.</p><ul class="tags"><li>Acción</li><li>Shōnen</li></ul></div><div class="overlay"><h4 class="overlay__title">Naruto</h4><ul class="meta"><li>⭐ 4.7 (1.5M)</li><li>5 Temporadas</li><li>220 Episodios</li></ul><p class="overlay__desc">El camino del ninja más ruidoso hacia convertirse en Hokage.</p></div></article>
+          <!-- DBZ -->
+          <article class="card"><div class="card__media"><img src="./assets/dragon-ball-super.jpg" alt="Póster de Dragon Ball Z" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Dragon Ball Súper</a></h3><p class="card__excerpt">Luchas épicas y poderes descomunales.</p><ul class="tags"><li>Acción</li><li>Artes Marciales</li></ul></div><div class="overlay"><h4 class="overlay__title">Dragon Ball Súper</h4><ul class="meta"><li>⭐ 4.8 (2.0M)</li><li>9 Sagas</li><li>291 Episodios</li></ul><p class="overlay__desc">Goku, Vegeta y los guerreros Z protegen la Tierra de amenazas galácticas.</p></div></article>
+          <!-- Bleach -->
+          <article class="card"><div class="card__media"><img src="./assets/bleach.jpg" alt="Póster de Bleach" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Bleach</a></h3><p class="card__excerpt">Shinigamis, hollows y batallas sobrenaturales.</p><ul class="tags"><li>Acción</li><li>Sobrenatural</li></ul></div><div class="overlay"><h4 class="overlay__title">Bleach</h4><ul class="meta"><li>⭐ 4.7 (900K)</li><li>16 Temporadas</li><li>366 Episodios</li></ul><p class="overlay__desc">Ichigo obtiene poderes de shinigami y se enfrenta a enemigos memorables.</p></div></article>
+          <!-- MHA -->
+          <article class="card"><div class="card__media"><img src="./assets/My_Hero_Academia.webp" alt="Póster de My Hero Academia" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">My Hero Academia</a></h3><p class="card__excerpt">Héroes en formación y combates espectaculares.</p><ul class="tags"><li>Acción</li><li>Héroes</li></ul></div><div class="overlay"><h4 class="overlay__title">My Hero Academia</h4><ul class="meta"><li>⭐ 4.7 (1.0M)</li><li>6 Temporadas</li><li>138 Episodios</li></ul><p class="overlay__desc">Izuku Midoriya persigue el sueño de convertirse en héroe en un mundo de quirks.</p></div></article>
+          <!-- OPM -->
+          <article class="card"><div class="card__media"><img src="./assets/opm.jpg" alt="Póster de One Punch Man" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">One Punch Man</a></h3><p class="card__excerpt">Un golpe lo decide todo... y la comedia también.</p><ul class="tags"><li>Acción</li><li>Comedia</li></ul></div><div class="overlay"><h4 class="overlay__title">One Punch Man</h4><ul class="meta"><li>⭐ 4.6 (980K)</li><li>2 Temporadas</li><li>24 Episodios</li></ul><p class="overlay__desc">Saitama busca un rival a su altura mientras salva al mundo sin despeinarse.</p></div></article>
+          <!-- Demon Slayer -->
+          <article class="card"><div class="card__media"><img src="./assets/Demonslayer.jpg" alt="Póster de Demon Slayer" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Demon Slayer</a></h3><p class="card__excerpt">Estética impecable y coreografías increíbles.</p><ul class="tags"><li>Acción</li><li>Shōnen</li></ul></div><div class="overlay"><h4 class="overlay__title">Demon Slayer</h4><ul class="meta"><li>⭐ 4.8 (1.2M)</li><li>4 Temporadas</li><li>55 Episodios</li></ul><p class="overlay__desc">La cacería de demonios nunca se vio tan hermosa.</p></div></article>
+        </div>
+      </details>
+    </section>
+
+    <!-- COMEDIA -->
+    <section id="comedia" class="category">
+      <h2 class="section-title">Animes de comedia</h2>
+
+      <div class="grid">
+        <!-- Spy x Family -->
+        <article class="card">
+          <div class="card__media"><img src="./assets/Spyxfamily.avif" alt="Póster Spy x Family" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title"><a href="#">Spy x Family</a></h3>
+            <p class="card__excerpt">Familia falsa, ternura verdadera.</p>
+            <ul class="tags"><li>Comedia</li><li>Familiar</li></ul>
+          </div>
+          <div class="overlay">
+            <h4 class="overlay__title">Spy x Family</h4>
+            <ul class="meta"><li>⭐ 4.7 (840K)</li><li>2 Temporadas</li><li>37 Episodios</li></ul>
+            <p class="overlay__desc">Operaciones secretas, escuela y mucha Anya.</p>
+          </div>
+        </article>
+
+        <!-- OPM -->
+        <article class="card">
+          <div class="card__media"><img src="./assets/opm.jpg" alt="Póster One Punch Man" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title"><a href="#">One Punch Man</a></h3>
+            <p class="card__excerpt">Parodia de superhéroes + acción.</p>
+            <ul class="tags"><li>Comedia</li><li>Acción</li></ul>
+          </div>
+          <div class="overlay">
+            <h4 class="overlay__title">One Punch Man</h4>
+            <ul class="meta"><li>⭐ 4.6 (980K)</li><li>2 Temporadas</li><li>24 Episodios</li></ul>
+            <p class="overlay__desc">Sátira del mundo héroe con golpes definitivos.</p>
+          </div>
+        </article>
+
+        <!-- Kaguya -->
+        <article class="card">
+          <div class="card__media"><img src="./assets/kaguya.jpg" alt="Póster Kaguya-sama" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title"><a href="#">Kaguya-sama</a></h3>
+            <p class="card__excerpt">Guerra romántica de mentes.</p>
+            <ul class="tags"><li>Comedia</li><li>Romance</li></ul>
+          </div>
+          <div class="overlay">
+            <h4 class="overlay__title">Kaguya-sama</h4>
+            <ul class="meta"><li>⭐ 4.8 (960K)</li><li>3 Temporadas</li><li>37 Episodios</li></ul>
+            <p class="overlay__desc">Estrategias amorosas que terminan en caos adorable.</p>
+          </div>
+        </article>
+      </div>
+
+      <details class="more">
+        <summary>Ver más <span class="caret" aria-hidden="true"></span></summary>
+        <div class="grid">
+          <!-- KonoSuba -->
+          <article class="card"><div class="card__media"><img src="./assets/konosuba.webp" alt="Póster de KonoSuba" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">KonoSuba</a></h3><p class="card__excerpt">Parodia del isekai con humor absurdo.</p><ul class="tags"><li>Comedia</li><li>Isekai</li></ul></div><div class="overlay"><h4 class="overlay__title">KonoSuba</h4><ul class="meta"><li>⭐ 4.7 (650K)</li><li>3 Temporadas</li><li>33 Episodios</li></ul><p class="overlay__desc">Kazuma y su party más rota que poderosa.</p></div></article>
+          <!-- Saiki K -->
+          <article class="card"><div class="card__media"><img src="./assets/saikik.jpg" alt="Póster de Saiki Kusuo no Psi-nan" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Saiki Kusuo no Psi-nan</a></h3><p class="card__excerpt">Un psíquico que solo quiere vivir tranquilo.</p><ul class="tags"><li>Comedia</li><li>Sobrenatural</li></ul></div><div class="overlay"><h4 class="overlay__title">Saiki Kusuo no Psi-nan</h4><ul class="meta"><li>⭐ 4.7 (520K)</li><li>2 Temporadas</li><li>48 Episodios</li></ul><p class="overlay__desc">Poderes ilimitados, cero ganas de complicarse.</p></div></article>
+          <!-- Gintama -->
+          <article class="card"><div class="card__media"><img src="./assets/gintama.jpg" alt="Póster de Gintama" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Gintama</a></h3><p class="card__excerpt">Meta-humor, parodias y acción samurái.</p><ul class="tags"><li>Comedia</li><li>Acción</li></ul></div><div class="overlay"><h4 class="overlay__title">Gintama</h4><ul class="meta"><li>⭐ 4.8 (880K)</li><li>8 Temporadas</li><li>367 Episodios</li></ul><p class="overlay__desc">Gintoki y compañía rompen la cuarta pared con estilo.</p></div></article>
+          <!-- Nichijou -->
+          <article class="card"><div class="card__media"><img src="./assets/nichijou.jpg" alt="Póster de Nichijou" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Nichijou</a></h3><p class="card__excerpt">Lo cotidiano llevado al absurdo total.</p><ul class="tags"><li>Comedia</li><li>Slice of Life</li></ul></div><div class="overlay"><h4 class="overlay__title">Nichijou</h4><ul class="meta"><li>⭐ 4.6 (300K)</li><li>1 Temporada</li><li>26 Episodios</li></ul><p class="overlay__desc">Momentos diarios que explotan en gags inolvidables.</p></div></article>
+          <!-- Grand Blue -->
+          <article class="card"><div class="card__media"><img src="./assets/grand blue.jpg" alt="Póster de Grand Blue" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Grand Blue</a></h3><p class="card__excerpt">Universidad, buceo… y descontrol total.</p><ul class="tags"><li>Comedia</li><li>Universidad</li></ul></div><div class="overlay"><h4 class="overlay__title">Grand Blue</h4><ul class="meta"><li>⭐ 4.6 (240K)</li><li>1 Temporada</li><li>12 Episodios</li></ul><p class="overlay__desc">Una “hermosa” introducción a la vida universitaria japonesa.</p></div></article>
+          <!-- Asobi Asobase -->
+          <article class="card"><div class="card__media"><img src="./assets/asobiasobase.jpg" alt="Póster de Asobi Asobase" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Asobi Asobase</a></h3><p class="card__excerpt">Juegos “inocentes” y caos.</p><ul class="tags"><li>Comedia</li></ul></div><div class="overlay"><h4 class="overlay__title">Asobi Asobase</h4><ul class="meta"><li>⭐ 4.6 (210K)</li><li>1 Temporada</li><li>12 Episodios</li></ul><p class="overlay__desc">Tres chicas, un club escolar y humor negro inesperado.</p></div></article>
+        </div>
+      </details>
+    </section>
+
+    <!-- SOBRENATURAL -->
+    <section id="sobrenatural" class="category">
+      <h2 class="section-title">Animes sobrenaturales</h2>
+
+      <div class="grid">
+        <!-- JJK -->
+        <article class="card">
+          <div class="card__media"><img src="./assets/Jujutsukaisen.webp" alt="Póster de Jujutsu Kaisen" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title"><a href="#">Jujutsu Kaisen</a></h3>
+            <p class="card__excerpt">Maldiciones, maestros y estilo.</p>
+            <ul class="tags"><li>Acción</li><li>Sobrenatural</li></ul>
+          </div>
+          <div class="overlay">
+            <h4 class="overlay__title">Jujutsu Kaisen</h4>
+            <ul class="meta"><li>⭐ 4.9 (1.1M)</li><li>2 Temporadas</li><li>47 Episodios</li></ul>
+            <p class="overlay__desc">Hechicería moderna con coreografías impecables.</p>
+          </div>
+        </article>
+
+        <!-- Made in Abyss -->
+        <article class="card">
+          <div class="card__media"><img src="./assets/made-in-abyss.webp" alt="Póster de Made in Abyss" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title"><a href="#">Made in Abyss</a></h3>
+            <p class="card__excerpt">Belleza y terror en un abismo misterioso.</p>
+            <ul class="tags"><li>Aventura</li><li>Oscuro</li></ul>
+          </div>
+          <div class="overlay">
+            <h4 class="overlay__title">Made in Abyss</h4>
+            <ul class="meta"><li>⭐ 4.8 (560K)</li><li>2 Temporadas</li><li>25 Episodios</li></ul>
+            <p class="overlay__desc">Una expedición hacia lo desconocido con gran riesgo y maravilla.</p>
+          </div>
+        </article>
+
+        <!-- Mushishi -->
+        <article class="card">
+          <div class="card__media"><img src="./assets/mushishi.jpg" alt="Póster de Mushishi" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title"><a href="#">Mushishi</a></h3>
+            <p class="card__excerpt">Relatos contemplativos de seres etéreos.</p>
+            <ul class="tags"><li>Slice of Life</li><li>Sobrenatural</li></ul>
+          </div>
+          <div class="overlay">
+            <h4 class="overlay__title">Mushishi</h4>
+            <ul class="meta"><li>⭐ 4.8 (410K)</li><li>2 Temporadas</li><li>46 Episodios</li></ul>
+            <p class="overlay__desc">Ginko investiga fenómenos causados por criaturas primigenias llamadas mushi.</p>
+          </div>
+        </article>
+      </div>
+
+      <details class="more">
+        <summary>Ver más <span class="caret" aria-hidden="true"></span></summary>
+        <div class="grid">
+          <!-- Death Note -->
+          <article class="card"><div class="card__media"><img src="./assets/death note.jpg" alt="Póster de Death Note" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Death Note</a></h3><p class="card__excerpt">Un cuaderno que decide el destino.</p><ul class="tags"><li>Thriller</li><li>Sobrenatural</li></ul></div><div class="overlay"><h4 class="overlay__title">Death Note</h4><ul class="meta"><li>⭐ 4.9 (2.1M)</li><li>1 Temporada</li><li>37 Episodios</li></ul><p class="overlay__desc">Light y L se enfrentan en una partida mental por la justicia.</p></div></article>
+          <!-- Mob Psycho -->
+          <article class="card"><div class="card__media"><img src="./assets/mobpsycho.jpg" alt="Póster de Mob Psycho 100" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Mob Psycho 100</a></h3><p class="card__excerpt">Poder psíquico, humor y corazón.</p><ul class="tags"><li>Sobrenatural</li><li>Comedia</li></ul></div><div class="overlay"><h4 class="overlay__title">Mob Psycho 100</h4><ul class="meta"><li>⭐ 4.8 (780K)</li><li>3 Temporadas</li><li>37 Episodios</li></ul><p class="overlay__desc">Mob intenta vivir normal con un poder que puede desbordarlo.</p></div></article>
+          <!-- Natsume -->
+          <article class="card"><div class="card__media"><img src="./assets/natsume.jpg" alt="Póster de Natsume's Book of Friends" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Natsume's Book of Friends</a></h3><p class="card__excerpt">Espíritus, empatía y calma.</p><ul class="tags"><li>Slice of Life</li><li>Sobrenatural</li></ul></div><div class="overlay"><h4 class="overlay__title">Natsume's Book of Friends</h4><ul class="meta"><li>⭐ 4.7 (330K)</li><li>6 Temporadas</li><li>74 Episodios</li></ul><p class="overlay__desc">Natsume ayuda a espíritus devolviendo sus nombres del libro heredado.</p></div></article>
+          <!-- Blue Exorcist -->
+          <article class="card"><div class="card__media"><img src="./assets/blue-exorcist.jpg" alt="Póster de Blue Exorcist" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Blue Exorcist</a></h3><p class="card__excerpt">Exorcistas, academias y demonios.</p><ul class="tags"><li>Acción</li><li>Sobrenatural</li></ul></div><div class="overlay"><h4 class="overlay__title">Blue Exorcist</h4><ul class="meta"><li>⭐ 4.5 (410K)</li><li>3 Temporadas</li><li>37 Episodios</li></ul><p class="overlay__desc">Rin, hijo de Satanás, decide luchar contra su destino entrenando como exorcista.</p></div></article>
+          <!-- Tokyo Ghoul -->
+          <article class="card"><div class="card__media"><img src="./assets/tokyo-ghoul.jpg" alt="Póster de Tokyo Ghoul" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Tokyo Ghoul</a></h3><p class="card__excerpt">Identidad y oscuridad en la ciudad.</p><ul class="tags"><li>Terror</li><li>Sobrenatural</li></ul></div><div class="overlay"><h4 class="overlay__title">Tokyo Ghoul</h4><ul class="meta"><li>⭐ 4.5 (1.0M)</li><li>4 Temporadas</li><li>48 Episodios</li></ul><p class="overlay__desc">Kaneki lucha por su humanidad tras convertirse en ghoul.</p></div></article>
+          <!-- Noragami -->
+          <article class="card"><div class="card__media"><img src="./assets/noragami.jpg" alt="Póster de Noragami" loading="lazy"></div><div class="card__body"><h3 class="card__title"><a href="#">Noragami</a></h3><p class="card__excerpt">Dioses en aprietos y batallas espirituales.</p><ul class="tags"><li>Acción</li><li>Sobrenatural</li></ul></div><div class="overlay"><h4 class="overlay__title">Noragami</h4><ul class="meta"><li>⭐ 4.6 (520K)</li><li>2 Temporadas</li><li>25 Episodios</li></ul><p class="overlay__desc">Yato, un dios menor, sueña con tener su propio templo… y clientes.</p></div></article>
+        </div>
+      </details>
+    </section>
+
+    <!-- =================== ACERCA =================== -->
+    <section id="acerca" class="about">
+      <h2 class="section-title">Acerca del proyecto</h2>
+      <p>Este blog fue construido como parte del curso “Fundamentos de Desarrollo Web”. No usa JavaScript ni frameworks, solo HTML y CSS. El propósito es entender estructura, etiquetas, selectores y diseño básico.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>WebDev - DEMO</p>
+    </div>
+  </footer>
+</body>
+</html>
