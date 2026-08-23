@@ -1,40 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Portafolio de Juan José Meza, estudiante de Ingeniería de Software y desarrollador frontend junior."
+  />
+
   <title>Portafolio | Juan José Meza</title>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header class="header">
-    <a href="index.html" class="logo">JuanMHZ12</a>
+
+    <a href="index.html" class="logo">
+      JuanMHZ12
+    </a>
 
     <nav class="nav">
-      <a href="index.html" class="nav-link">Inicio</a>
-      <a href="portafolio.html" class="nav-link active">Portafolio</a>
-    </nav>
-  </header>
+      <a href="index.html" class="nav-link">
+        Inicio
+      </a>
 
+      <a href="portafolio.html" class="nav-link active">
+        Portafolio
+      </a>
+    </nav>
+
+  </header>
   <main>
+
+    <!-- HERO PORTAFOLIO -->
     <section class="portfolio-hero">
-      <p class="tag">Mis proyectos</p>
-      <h1>Portafolio</h1>
+
+      <p class="tag">
+        Mis proyectos
+      </p>
+
+      <h1>
+        Portafolio
+      </h1>
       <p>
-        Proyectos desarrollados para practicar HTML, CSS, JavaScript y lógica de programación.
+        Proyectos de desarrollo web enfocados en frontend y aplicaciones
+        web modernas, utilizando tecnologías como HTML, CSS, JavaScript,
+        React, Next.js, TypeScript y servicios backend.
       </p>
     </section>
-
+    <!-- =========================
+         PROYECTOS
+    ========================== -->
     <section class="section">
+
       <div class="project-grid">
+        <!-- =========================
+             KEVOLUTION
+        ========================== -->
+        <article class="project-card featured-project">
+
+          <div class="project-image-wrapper">
+
+            <img
+              src="imgs/Kevolution.png"
+              alt="Página web de Kevolution Fitness Center"
+              class="project-img"
+            />
+
+            <span class="project-badge">
+              Proyecto destacado
+            </span>
+
+          </div>
+
+
+          <div class="project-content">
+
+            <h3>
+              Kevolution Fitness Center
+            </h3>
+
+            <p>
+              Plataforma web desarrollada para un gimnasio, con sitio público,
+              autenticación de usuarios y panel administrativo. Incluye inicio
+              de sesión con Google, perfiles de usuario, planes, reseñas,
+              entrenadores, galería y contenido editable mediante Supabase.
+            </p>
+
+
+            <div class="skills small">
+              <span>Next.js</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Supabase</span>
+              <span>Tailwind CSS</span>
+            </div>
+
+
+            <div class="project-actions">
+
+              <!--
+                REEMPLAZA # POR EL LINK REAL
+                DE KEVOLUTION CUANDO LO TENGAS
+              -->
+              <a
+                href="https://evolution-fitness-center-one.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn primary"
+              >
+                Ver proyecto
+              </a>
+
+
+              <!--
+                Si tu repositorio tiene otro nombre,
+                cambia esta URL.
+              -->
+              <a
+                href="https://github.com/JuanMHZ12"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn secondary"
+              >
+                GitHub
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- =========================
+             AURANEURO
+        ========================== -->
         <article class="project-card">
-          <img src="img/ProyectoCalculadora.jpeg" alt="Proyecto calculadora de IMC" class="project-img" />
+
+          <img
+            src="img/ProyectoAuraneuro.jpeg"
+            alt="Proyecto AuraNeuro"
+            class="project-img"
+          />
+
 
           <div class="project-content">
-            <h3>Calculadora de IMC</h3>
+
+            <h3>
+              AuraNeuro
+            </h3>
+
             <p>
-              Aplicación web que calcula el índice de masa corporal del usuario y muestra su categoría según el resultado.
+              Landing page profesional desarrollada en equipo sobre bienestar
+              emocional y neurología digital. Incluye carrusel, secciones
+              informativas, planes, testimonios, diseño moderno y soporte
+              multilenguaje.
             </p>
+
 
             <div class="skills small">
               <span>HTML</span>
@@ -42,19 +168,47 @@
               <span>JavaScript</span>
             </div>
 
-            <a href="ProyectoCalculadora.html" class="btn primary">Ver proyecto</a>
+
+            <div class="project-actions">
+
+              <a
+                href="Auraneuro.html"
+                class="btn primary"
+              >
+                Ver proyecto
+              </a>
+
+            </div>
+
           </div>
+
         </article>
 
-        <article class="project-card empty">
-          <img src="img/ProyectoAnime.jfif" alt="Próximo proyecto frontend" class="project-img" />
+
+        <!-- =========================
+             ANIMEBLOG
+        ========================== -->
+        <article class="project-card">
+
+          <img
+            src="img/ProyectoAnime.jfif"
+            alt="Proyecto AnimeBlog"
+            class="project-img"
+          />
+
 
           <div class="project-content">
-            <h3>AnimeBlog</h3>
+
+            <h3>
+              AnimeBlog
+            </h3>
+
             <p>
-              Landing page tipo blog sobre animes, desarrollada con HTML y CSS. Incluye tarjetas visuales,
-              buscador, navegación por categorías y diseño oscuro moderno.
+              Landing page tipo blog sobre animes, desarrollada con HTML,
+              CSS y JavaScript. Incluye tarjetas visuales, buscador,
+              navegación por categorías y diseño oscuro moderno.
             </p>
+
 
             <div class="skills small">
               <span>HTML</span>
@@ -62,20 +216,47 @@
               <span>JavaScript</span>
             </div>
 
-            <a href="Landing_Mythicore.html" class="btn primary">Ver proyecto</a>
+
+            <div class="project-actions">
+
+              <a
+                href="Landing_Mythicore.html"
+                class="btn primary"
+              >
+                Ver proyecto
+              </a>
+
+            </div>
+
           </div>
+
         </article>
 
-        <article class="project-card empty">
-          <img src="img/ProyectoAuraneuro.jpeg" alt="Próximo proyecto frontend" class="project-img" />
+
+        <!-- =========================
+             CALCULADORA IMC
+        ========================== -->
+        <article class="project-card">
+
+          <img
+            src="img/ProyectoCalculadora.jpeg"
+            alt="Proyecto calculadora de IMC"
+            class="project-img"
+          />
+
 
           <div class="project-content">
-            <h3>AuraNeuro</h3>
+
+            <h3>
+              Calculadora de IMC
+            </h3>
+
             <p>
-              Landing page profesional desarrollada en equipo sobre bienestar emocional y neurología digital.
-              Incluye carrusel, secciones informativas, planes, testimonios, diseño moderno
-              y soporte multilenguaje.
+              Aplicación web que calcula el índice de masa corporal del
+              usuario a partir de su peso y altura, mostrando automáticamente
+              la categoría correspondiente según el resultado.
             </p>
+
 
             <div class="skills small">
               <span>HTML</span>
@@ -83,16 +264,55 @@
               <span>JavaScript</span>
             </div>
 
-            <a href="Auraneuro.html" class="btn primary">Ver proyecto</a>
+
+            <div class="project-actions">
+
+              <a
+                href="ProyectoCalculadora.html"
+                class="btn primary"
+              >
+                Ver proyecto
+              </a>
+
+            </div>
+
           </div>
+
         </article>
+
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
   <footer class="footer">
-    <h2>¿Trabajamos juntos?</h2>
-    <a href="https://wa.me/51924691680" class="btn primary">Contáctame</a>
+
+    <h2>
+      ¿Trabajamos juntos?
+    </h2>
+
+    <p class="footer-text">
+      Estoy interesado en oportunidades de desarrollo frontend,
+      desarrollo web y prácticas preprofesionales.
+    </p>
+
+    <a
+      href="https://wa.me/51924691680"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn primary"
+    >
+      Contáctame
+    </a>
+
   </footer>
+
 </body>
+
 </html>
